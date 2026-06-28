@@ -1,0 +1,87 @@
+:root {
+    color-scheme: dark;
+    --background: #1e1e1e;
+    --section-background: #282828;
+    --textcolor: #c8c8c8;
+}
+
+html {
+    color: var(--textcolor);
+    background: var(--background);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: "Cascadia Mono";
+    min-width: 480px;
+    max-width: 960px;
+    min-height: 100vh;
+    margin: 0 auto;
+}
+
+header {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    background: var(--section-background);
+}
+
+main {
+    margin: 12px;
+}
+
+h1 {
+    margin: 12px;
+}
+
+p {
+    margin: 0px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.products {
+    display: inline-block;
+    margin: 8px;
+    border-radius: 4px;
+    padding: 4px 8px 4px 8px;
+}
+
+.status-actively {
+    color: #f7630c;
+    border: 1px solid #f7630c;
+}
+
+.status-concept {
+    color: #00cc6a;
+    border: 1px solid #00cc6a;
+}
+
+.status-canceled {
+    color: #8e8cd8;
+    border: 1px solid #8e8cd8;
+}
+
+.status-frozen {
+    color: #00b7c3;
+    border: 1px solid #00b7c3;
+}
+
+.logo {
+    width: 32px;
+    height: 32px;
+    margin-left: 14px;
+    background: var(--background);
+}
+
+footer {
+    background: var(--section-background);
+    margin-top: auto;
+}
+
+.footer-info {
+    margin: 12px;
+}

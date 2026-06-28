@@ -1,0 +1,24 @@
+{
+    "projects": [
+        {
+            "name": "Project 1",
+            "status": "actively",
+            "url": "#"
+        },
+      {
+        "name": "Project 2",
+        "status": "actively",
+        "url": "#"
+      },
+        {
+            "name": "Project 3",
+            "status": "canceled",
+            "url": "#"
+        },
+        {
+            "name": "Project 4",
+            "status": "frozen",
+            "url": "#"
+        }
+    ]
+}
