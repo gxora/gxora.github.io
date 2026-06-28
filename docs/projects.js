@@ -35,7 +35,8 @@ async function loadProjects() {
         for (const project of data.projects) {
             const link = document.createElement("a");
 
-            link.className = `products status-${project.status}`;
+            link.className = `products status-${project.status} hint`;
+            link.dataset.hint = project.status;
             link.href = project.url;
             link.textContent = project.name;
 
