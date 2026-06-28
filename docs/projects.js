@@ -37,7 +37,7 @@ async function loadProjects() {
 
             link.className = `products status-${project.status}`;
             link.href = project.url;
-            link.textContent = `${icon} ${project.name}`;
+            link.textContent = project.name;
 
             container.appendChild(link);
         }
