@@ -14,13 +14,6 @@ Server JSON format for projects.json:
 Allowed status values: concept, actively, frozen, canceled.
 */
 
-const statusIcons = {
-    concept: "\u2712\uFE0F",
-    actively: "\u{1F525}",
-    frozen: "\u2744\uFE0F",
-    canceled: "\u{1F4A5}",
-};
-
 async function loadProjects() {
     const container = document.getElementById("products");
 
@@ -41,7 +34,6 @@ async function loadProjects() {
 
         for (const project of data.projects) {
             const link = document.createElement("a");
-            const icon = statusIcons[project.status] || "";
 
             link.className = `products status-${project.status}`;
             link.href = project.url;
