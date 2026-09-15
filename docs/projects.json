@@ -1,24 +1,8 @@
 {
-    "projects": [
-        {
-            "name": "Project 1",
-            "status": "actively",
-            "url": "#"
-        },
-      {
-        "name": "Project 2",
-        "status": "actively",
-        "url": "#"
-      },
-        {
-            "name": "Project 3",
-            "status": "canceled",
-            "url": "#"
-        },
-        {
-            "name": "Project 4",
-            "status": "frozen",
-            "url": "#"
-        }
-    ]
+  "projects": [
+    { "name": "Mathin", "status": "frozen", "url": "#", "desc": { "ru": "Математическая симуляция.", "en": "A math simulation project." } },
+    { "name": "Compax", "status": "actively", "url": "#", "desc": { "ru": "Конструктор бизнес-процессов.", "en": "A business-process builder." } },
+    { "name": "Garg", "status": "actively", "url": "#", "desc": { "ru": "Интернет-загадка — квест в духе сетевых тайн.", "en": "An internet-mystery puzzle quest." } },
+    { "name": "G-POS", "status": "actively", "url": "#", "desc": { "ru": "Кассовая система.", "en": "A point-of-sale system." } }
+  ]
 }

@@ -1,34 +1,56 @@
-<!DOCTYPE HTML>
-<html lang="en-us">
+<!DOCTYPE html>
+<html lang="ru">
 <head>
-	<meta charset="UTF-8">
-	<title>GXora</title>
-	<link rel="stylesheet" href="style.css?v=2">
-	<script src="projects.js?v=2" defer></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GXora</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=1">
 </head>
-<body class="page">
-	<header>
-		<h1>GXora</h1>
-	</header>
+<body>
+  <header class="header">
+    <h1 class="logo">GXora</h1>
+    <div class="lang-switch">
+      <button id="lang-ru" class="lang-btn active">RU</button>
+      <button id="lang-en" class="lang-btn">EN</button>
+    </div>
+  </header>
 
-	<main>
-		<p>
-			GXora creates human-centered digital projects and creative
-			works. The format may vary - from software to games and visual
-			projects - but quality, clarity, and long-term value remain the
-			company's core principles.
-		</p>
-		<br />
-		<p>
-			All projects:
-		</p>
-		<div id="products"></div>
-	</main>
+  <nav class="nav" id="nav">
+    <span class="nav-item active" data-target="about"><span class="nav-arrow">&gt;</span>about</span>
+    <span class="nav-item" data-target="projects"><span class="nav-arrow">&gt;</span>projects</span>
+    <span class="nav-item" data-target="news"><span class="nav-arrow">&gt;</span>news</span>
+  </nav>
 
-	<footer>
-		<div class="footer-info">
-			<p>Copyright &copy; 2026 GXora. All rights reserved.</p>
-		</div>
-	</footer>
+  <main>
+    <section id="about" class="section section-about">
+      <div class="section-inner">
+        <p class="prompt">guest@gxora:~$ cat about.md</p>
+        <p class="body-text" data-i18n="aboutText"></p>
+      </div>
+    </section>
+
+    <section id="projects" class="section section-projects">
+      <div class="section-inner">
+        <p class="prompt">guest@gxora:~$ ls projects/</p>
+        <div class="projects-grid" id="projects-grid"></div>
+      </div>
+    </section>
+
+    <section id="news" class="section section-news">
+      <div class="section-inner">
+        <p class="prompt">guest@gxora:~$ tail -f news.log</p>
+        <p class="news-empty" data-i18n="newsEmpty"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p class="copyright">© 2026 GXora</p>
+    <a href="https://t.me/sudocxer" class="contact-link"><span data-i18n="contactLabel"></span> → @sudocxer</a>
+  </footer>
+
+  <script src="script.js?v=1" defer></script>
 </body>
 </html>
